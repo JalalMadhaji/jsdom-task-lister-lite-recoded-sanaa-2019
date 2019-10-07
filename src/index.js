@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function editTask(e) {
     // console.log('edit task');
-    let item = e.target.parentNode.textContent;
+    let item = e.target.parentNode.text;
     console.log(item);
   }
 
