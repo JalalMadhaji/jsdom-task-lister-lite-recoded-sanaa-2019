@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function handleSubmition(e){
     e.preventDefault();
     if(input.value != ""){
-      tasks.innerHTML = "";
       // console.dir(col);
       let option = priority.options[priority.selectedIndex];
       let sortChar = option.getAttribute('data-sort');
