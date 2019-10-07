@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.addEventListener('click',deleteTask);
       li.appendChild(btn);
       tasks.appendChild(li);
-      let anything = sortList(tasks);
+      let anything = sortList(tasks.childNodes);
       console.log(anything);
       input.value = "";
     }
