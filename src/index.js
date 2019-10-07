@@ -11,8 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
     e.target.parentNode.parentNode.removeChild(e.target.parentNode);
   }
 
-  function editTask() {
-    console.log('edit task');
+  function editTask(e) {
+    // console.log('edit task');
+    let item = e.target.parentNode.innerHTML;
+    console.log(item);
   }
 
   // function sortList(list){
