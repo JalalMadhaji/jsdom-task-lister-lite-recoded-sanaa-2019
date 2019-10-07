@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
           let textA = a.getAttribute('data-sort').toLowerCase()
           let textB = b.getAttribute('data-sort').toLowerCase()
           return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-        })
-        .forEach(function(el) {
-        console.log('hi eli ' + el);
-        ul.appendChild(el)
-      });
+        });
+      //   .forEach(function(el) {
+      //   console.log('hi eli ' + el);
+      //   ul.appendChild(el)
+      // });
         }
     return coll;
   }
