@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
     e.target.parentNode.parentNode.removeChild(e.target.parentNode);
   }
 
+  function editTask() {
+    console.log('edit task');
+  }
+
   // function sortList(list){
   //       let coll = [...list]
   //       if(coll.length > 2){
