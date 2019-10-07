@@ -21,10 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
           let textB = b.getAttribute('data-sort').toLowerCase()
           return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
         });
-      //   .forEach(function(el) {
-      //   console.log('hi eli ' + el);
-      //   ul.appendChild(el)
-      // });
         }
     return coll;
   }
@@ -44,8 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
       li.appendChild(btn);
       tasks.appendChild(li);
       let liList = tasks.getElementsByTagName('li');
-      let anything = sortList(liList);
-      console.log(anything);
+      let sortedList = sortList(liList);
+      console.log(sortedList);
       input.value = "";
     }
   }
