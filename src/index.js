@@ -13,29 +13,23 @@ document.addEventListener("DOMContentLoaded", () => {
     e.target.parentNode.parentNode.removeChild(e.target.parentNode);
   }
 
-  // function sortList(list){
-  //       let coll = [...list]
-  //       // console.log(coll);
-  //       // if(coll.length > 1){
-  //         coll.sort(function(a, b) {
-  //           // console.log("a is " + a + " b is " + b )
-  //         let textA = a.getAttribute('data-sort').toLowerCase()
-  //         let textB = b.getAttribute('data-sort').toLowerCase()
-  //         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-  //       })
-      //   .forEach(function(el) {
-      //   console.log('hi eli ' + el);
-      //   ul.appendChild(el)
-      // });
-  //     listAll = [...coll];
-  //   // }
-  //   // return coll;
-  // }
+  function sortList(list){
+        let coll = [...list]
+          coll.sort(function(a, b) {
+          let textA = a.getAttribute('data-sort').toLowerCase()
+          let textB = b.getAttribute('data-sort').toLowerCase()
+          return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+        })
+        .forEach(function(el) {
+        console.log('hi eli ' + el);
+        ul.appendChild(el)
+      });
+    return coll;
+  }
 
   function handleSubmition(e){
     e.preventDefault();
     if(input.value != ""){
-      // console.dir(col);
       let option = priority.options[priority.selectedIndex];
       let sortChar = option.getAttribute('data-sort');
       let li = document.createElement('li');
@@ -46,20 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.innerHTML = 'X';
       btn.addEventListener('click',deleteTask);
       li.appendChild(btn);
-      // ul.appendChild(li);
       tasks.appendChild(li);
-      // let elements = ;
-      // sortList(ul.childNodes);
-    //   ul.childNodes.forEach(function(el) {
-    //   tasks.appendChild(el);
-    // });
-    // console.log(listAll);
-      // tasks.innerHTML = "";
-      // col.forEach(function(item){
-      //   tasks.appendChild(item);
-      // });
       input.value = "";
-      // console.log(col);
     }
   }
 });
