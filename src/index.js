@@ -11,11 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     e.target.parentNode.parentNode.removeChild(e.target.parentNode);
   }
 
-  function editTask(e) {
-    // console.log('edit task');
-    let item = e.target.parentNode.text;
-    console.log(item);
-  }
 
   // function sortList(list){
   //       let coll = [...list]
@@ -36,16 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
       let sortChar = option.getAttribute('data-sort');
       let li = document.createElement('li');
       let btn = document.createElement('button');
-      let editBtn = document.createElement('button');
       li.textContent = input.value + ' ';
       li.setAttribute('data-sort',sortChar);
       li.style.color = priority.value;
       btn.innerHTML = 'X';
       btn.addEventListener('click',deleteTask);
-      editBtn.innerHTML = "Edit";
-      editBtn.addEventListener('click',editTask);
       li.appendChild(btn);
-      li.appendChild(editBtn);
       tasks.appendChild(li);
       // let liList = tasks.getElementsByTagName('li');
       // let sortedList = sortList(liList);
