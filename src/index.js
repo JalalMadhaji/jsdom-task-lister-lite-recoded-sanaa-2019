@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function sortList(list){
         let coll = [...list]
-        if(col.length > 1){
+        if(coll.length > 1){
           coll.sort(function(a, b) {
           let textA = a.getAttribute('data-sort').toLowerCase()
           let textB = b.getAttribute('data-sort').toLowerCase()
