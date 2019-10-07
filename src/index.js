@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //   ul.childNodes.forEach(function(el) {
     //   tasks.appendChild(el);
     // });
-    console.log(listAll);
+    // console.log(listAll);
       // tasks.innerHTML = "";
       // col.forEach(function(item){
       //   tasks.appendChild(item);
